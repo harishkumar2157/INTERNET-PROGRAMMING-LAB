@@ -1,0 +1,116 @@
+{
+  "title": "VetCure",
+  "subtitle": "Farmer & Veterinary Care Portal",
+  "accent": "#0284c7",
+  "soft": "#eaf7ff",
+  "icon": "\u2661",
+  "entity": "Care case",
+  "plural": "Care cases",
+  "singular": "care case",
+  "fields": [
+    {
+      "key": "farmer",
+      "label": "Farmer name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "animal",
+      "label": "Animal / livestock",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "species",
+      "label": "Species",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Cow",
+        "Buffalo",
+        "Goat",
+        "Sheep",
+        "Poultry",
+        "Other"
+      ]
+    },
+    {
+      "key": "symptoms",
+      "label": "Symptoms / concern",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "doctor",
+      "label": "Veterinarian",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "visit_date",
+      "label": "Visit date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "key": "phone",
+      "label": "Farmer contact",
+      "type": "tel",
+      "required": true
+    },
+    {
+      "key": "status",
+      "label": "Status",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Requested",
+        "Scheduled",
+        "In treatment",
+        "Resolved"
+      ]
+    }
+  ],
+  "metrics": [
+    "Requested",
+    "Scheduled",
+    "Resolved"
+  ],
+  "nav": [
+    "Care cases",
+    "Farmers",
+    "Veterinarians"
+  ],
+  "seed": [
+    {
+      "farmer": "Ramesh G",
+      "animal": "Lakshmi \u00b7 Cow",
+      "species": "Cow",
+      "symptoms": "Reduced appetite",
+      "doctor": "Dr. Kavitha",
+      "visit_date": "2026-10-30",
+      "phone": "9876500101",
+      "status": "Scheduled"
+    },
+    {
+      "farmer": "Selvi M",
+      "animal": "Goat herd \u00b7 3 animals",
+      "species": "Goat",
+      "symptoms": "Routine vaccination",
+      "doctor": "Dr. Arul",
+      "visit_date": "2026-11-01",
+      "phone": "9876500102",
+      "status": "Requested"
+    },
+    {
+      "farmer": "Balan P",
+      "animal": "Ponni \u00b7 Buffalo",
+      "species": "Buffalo",
+      "symptoms": "Follow-up check",
+      "doctor": "Dr. Kavitha",
+      "visit_date": "2026-10-28",
+      "phone": "9876500103",
+      "status": "In treatment"
+    }
+  ]
+}
